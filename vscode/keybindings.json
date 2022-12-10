@@ -1,0 +1,80 @@
+// 将键绑定放在此文件中以覆盖默认值
+[
+  // vim —— day15 START
+  
+  // window move left
+  {
+    "key": "shift+left",
+    "command": "vim.remap",
+    "when": "vim.mode == 'Normal'",
+    "args": {
+      "after": ["<c-w>", "h"]
+    }
+  },
+
+  // window move right 
+  {
+    "key": "shift+right",
+    "command": "vim.remap",
+    "when": "vim.mode == 'Normal'",
+    "args": {
+      "after": ["<c-w>", "l"]
+    }
+  },
+
+  // window move up 
+  {
+    "key": "shift+up",
+    "command": "vim.remap",
+    "when": "vim.mode == 'Normal'",
+    "args": {
+      "after": ["<c-w>", "k"]
+    }
+  },
+ 
+  // window move down 
+  {
+    "key": "shift+down",
+    "command": "vim.remap",
+    "when": "vim.mode == 'Normal'",
+    "args": {
+      "after": ["<c-w>", "j"]
+    }
+  },
+
+  // vim —— day 15 END
+
+  // vscode —— day 01 START
+
+  {
+    "key": "ctrl+;",
+    "command": "workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "ctrl+'",
+    "command": "workbench.action.focusFirstEditorGroup"
+  },
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "shift+a",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "d",
+    "command": "deleteFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+  }
+  
+  // vscode —— day 01 END
+]

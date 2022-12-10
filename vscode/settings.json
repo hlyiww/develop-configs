@@ -1,0 +1,183 @@
+{
+  "workbench.colorTheme": "Dracula Pro",
+  "terminal.integrated.fontSize": 16,
+  "editor.fontSize": 16,
+  "workbench.startupEditor": "none",
+  "workbench.sideBar.location": "right",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // RUST CONFIG —— START
+
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer", 
+    "editor.formatOnSave": true 
+  },
+
+  // RUST CONFIG —— END
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "editor.tabSize": 2,
+  "workbench.iconTheme": "material-icon-theme",
+
+  // VIM CONFIG —— START
+
+  // vim 插件
+  "vim.easymotion": true,
+  "vim.sneak": true,
+
+  // vim leader 按键配置
+  "vim.leader": "<Space>",
+
+  // vim Normal 模式下的按键映射
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<Leader>", "d", "f"],
+      "after": ["V", "$", "%", "d"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["g", "_"]
+    },
+    {
+      "before": ["J"],
+      "after": ["5", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["5", "k"]
+    }
+  ],
+
+  // vim Visual 模式下的按键映射
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["g", "_"]
+    },
+    {
+      "before": ["J"],
+      "after": ["5", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["5", "k"]
+    },
+    {
+      "before": ["a", "i"],
+      "after": ["a", "I"]
+    }
+  ],
+
+  // vim 按下操作符进入 pending 状态后的按键映射
+  "vim.operatorPendingModeKeyBindings": [
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["l"],
+      "after": ["g", "_"]
+    },
+    {
+      "before": ["a", "i"],
+      "after": ["a", "I"]
+    }
+  ],
+
+  // vim Visual 模式下的非递归按键映射
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["f"],
+      "after": ["s"]
+    }
+  ],
+
+  // vim Normal 模式下的非递归按键映射
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "n", "d"],
+      "commands": ["explorer.newFolder"]
+    },
+    {
+      "before": ["<leader>", "n", "f"],
+      "commands": ["explorer.newFile"]
+    },
+    {
+      "before": ["<leader>", "f", "d"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "before": ["<Leader>", "r", "n"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<Leader>", "["],
+      "commands": [
+        {
+          "command": "editor.fold"
+        },
+        {
+          "command": "vim.remap",
+          "args": {
+            "after": ["$", "%"]
+          }
+        }
+      ]
+    }, 
+    {
+      "before": ["f"],
+      "after": ["s"]
+    },
+    {
+      "before": ["F"],
+      "after": ["S"]
+    },
+    {
+      "before": ["s"],
+      "after": ["c", "l"]
+    },
+    {
+      "before": ["S"],
+      "after": ["^", "C"]
+    }
+  ],
+
+  // vim 操作符 pending 非递归模式
+  "vim.operatorPendingModeKeyBindingsNonRecursive": [
+    {
+      "before": ["f"],
+      "after": ["z"]
+    },
+    {
+      "before": ["F"],
+      "after": ["Z"]
+    }
+  ],
+
+  // VIM CONFIG —— END
+
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.fontFamily": "'Maple Mono NF',Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "'Maple Mono NF'",
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true,
+  "prettier.semi": false
+}
